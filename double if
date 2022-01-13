@@ -1,0 +1,15 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+int main()
+{
+	int a = 1;
+	int b = 3;
+	if (b==1)
+	     if (a==2)
+	printf("1\n");
+	     else
+		printf("2\n");
+
+		 
+}
