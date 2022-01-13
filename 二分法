@@ -1,0 +1,30 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+int main()
+{
+	int arr[] = {1,2,3,4,5,6,7,8,9,10};
+	int k=8;
+	int geshu;
+	geshu = sizeof(arr)/sizeof(arr[0]);
+	int left=0;
+	int right = geshu-1;
+	int mid;
+	while (left <= right)
+	{
+		mid=(right+left)/2;
+		if (k<arr[mid])
+		{
+			right = mid-1;
+		}
+		else if (k>arr[mid])
+		{
+			left = mid+1;
+		}
+		else
+		{
+			printf("找到了,下角标是：%d\n", mid);
+			break;
+		}
+	}
+}
