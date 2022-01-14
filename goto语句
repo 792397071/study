@@ -1,0 +1,9 @@
+int main()
+{
+	printf("1\n");
+	
+	goto aaa;
+	printf("2\n");
+	aaa:
+	printf("3\n");
+}
