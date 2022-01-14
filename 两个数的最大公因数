@@ -13,11 +13,9 @@ int main()
 		n = z;
 	}
 	scanf("%d%d", &m, &n);
-	for (int i = 0; z != 0; i++)
+	for (int i = 0; z = m%n; i++)
 	{
-		z = m%n;
-		if (z == 0)
-			break;
+
 		m = n;
 		n = z;
 
