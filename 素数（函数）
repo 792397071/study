@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int su(int a)
+{
+	int i = 2;
+	for (i; i <= a / 2; i++)
+	{
+		if (a%i == 0)
+			return 0;
+
+	}
+	
+		return 1;
+	
+     
+}
+
+int main()
+{
+	int i1=100;
+	for (i1; i1 <= 200; i1++)
+	{
+	
+		if (su(i1) == 1)
+			printf("%d ", i1);
+	}
+
+
+}
