@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+
+
+
+int main()
+{
+	char arr[] = "hello word";
+	memset (arr, '9', 4);
+	printf("%s\n", arr);
+
+}
