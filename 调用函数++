@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+
+
+void ADD(int* a)
+{
+	(*a)++;
+}
+int main()
+{
+	int a = 0;
+	ADD(&a);
+	printf("%d",a);
+	ADD(&a);
+	printf("%d",a);
+	ADD(&a);
+	printf("%d",a);
+
+
+}
