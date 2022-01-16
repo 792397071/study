@@ -1,0 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int mystrlen(char* a)
+{
+	int c=0;
+	while (*a != '\0')
+	{
+
+		c++;
+		a++;
+	}
+	return c;
+}
+
+
+int main()
+{
+	char arr[] = "asdsafad";
+	int len = mystrlen(arr);
+	printf("%d", len);
+
+}
