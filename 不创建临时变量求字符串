@@ -1,0 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int mystrlen(char* a)
+{
+	if (*a != '\0')
+		return 1 + mystrlen(a + 1);
+	else
+		return 0;
+
+}
+
+
+int main()
+{
+	char arr[] = "asdsafad";
+	int len = mystrlen(arr);
+	printf("%d\n", len);
+
+}
