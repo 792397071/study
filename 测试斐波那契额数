@@ -1,0 +1,17 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int fac2(int n)
+{
+	if (n < 3)
+		return 1;
+	else
+		return fac2(n - 1) + fac2(n - 2);
+}
+
+
+int main()
+{
+	int a = 5;
+	printf("%d\n", fac2(a));
+}
