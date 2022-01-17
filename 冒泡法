@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+void paixu(int* arr, int sz1)
+{
+	int i = 0;
+	int j = 0;
+	int ex;
+	int k;
+	for (i=0;i<sz1-1;i++)
+	{
+		k = 1;
+		for (j=0; j < sz1 - 1 - i; j++)
+		{
+			if (arr[j]>arr[j + 1])
+			ex = arr[j];
+			arr[j] = arr[j + 1];
+			arr[j + 1] = ex;
+			k = 0;
+		}
+		if (k == 1)
+			break;
+	}
+}
+
+
+int main()
+{
+	int m;
+	int arr[] = { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	paixu(arr, sz);
+	for (m = 0; m < sz; m++)
+	{
+		printf("%d ", arr[m]);
+	}
+}
