@@ -1,0 +1,46 @@
+
+//int mystrlen(char* a)
+//{
+//	
+//	if (*a != '\0')
+//		return 1 + mystrlen(a + 1);
+//	
+//	return 0;
+//}
+
+
+//int mystrlen(char* a)
+//{
+//	int count=0;
+//	while (*a != '\0')
+//	{
+//		a++;
+//		count++;
+//
+//	}
+//
+//	return count;
+//}
+
+int mystrlen(char* a)
+{
+	char* start = a;
+	char* end = a;
+	while (*end != '\0')
+	{
+		end++;
+	}
+	return end-start;
+
+
+}
+
+int main()
+{
+	char arr[] = "asdsafad";
+	int len = mystrlen(arr);
+	printf("%d\n", len);
+
+}
+
+
