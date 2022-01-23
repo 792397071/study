@@ -1,0 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int cheng(int n,int k)
+{
+	if (k>0)
+	return n*cheng(n, k - 1);
+	else return 1;
+	
+}
+
+int main()
+{
+	int n=2;
+	int k=4;
+	printf("%d\n", cheng(n,k));
+	return 0;
+}
