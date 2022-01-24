@@ -1,0 +1,21 @@
+void mystrcpy(char* a1, char* a2)
+{
+	while (*a2 != '\0')
+	{
+		*a1 = *a2;
+		a1++;
+		a2++;
+	}
+	*a1 = *a2;
+}
+
+
+
+
+int main()
+{
+	char arr1[] = "#########";
+	char arr2[] = "bit";
+	mystrcpy(arr1, arr2);
+	printf("%s\n", arr1);
+}
