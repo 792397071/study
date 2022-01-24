@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <assert.h>
+
+//char* mystrcpy(char* a1,const char* a2)
+//{
+//	assert(a1 != NULL);
+//	assert(a2 != NULL);
+//	char* ret = a1;
+//	while (*a1++=*a2++)
+//	{
+//		;
+//	}
+//	return ret;
+//}
+
+int mystrcpy(const char* arr)
+{
+	assert(arr != NULL);
+	int count = 0;
+	while (*arr != '\0')
+	{
+		count++;
+		arr++;
+	}
+	return count;
+}
+
+int main()
+{
+	char arr1[] = "#";
+	printf("%d\n", mystrcpy(arr1));
+}
