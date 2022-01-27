@@ -1,0 +1,20 @@
+//返回1是小端，返回0是大端
+char check()
+{
+	int a = 256;
+	
+	return  *(char*)&a;
+}
+int main()
+{
+	
+	int ret = check();
+	printf("%d", check());
+	/*if ( ret== 32)
+	{
+		printf("小端\n");
+	}
+	else
+		printf("大端\n");*/
+	return 0;
+}
