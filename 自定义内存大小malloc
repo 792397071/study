@@ -1,0 +1,46 @@
+//
+//struct S
+//{
+//	char name[20];
+//	int age
+//};
+//
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//
+//	struct S arr[n];//50个struct S 类型的数据
+//
+//	//30 - 浪费
+//	//60 - 不够
+//
+//	return 0;
+//}
+
+//C语言是可以创建变长数组 -C99中增加了
+
+int main()
+{
+	//malloc(10*sizeof(int))
+	int*p = (int*)calloc(10, sizeof(int));
+
+	if (p == NULL)
+	{
+		printf("%s\n", strerror(errno));
+	}
+	else
+	{
+		int i = 0;
+		for (i = 0; i < 10; i++)
+		{
+			printf("%d ", *(p + i));
+		}
+	}
+	//释放空间
+	//free函数是用来释放动态开辟的空间的
+	free(p);
+	p = NULL;
+
+	return 0;
+}
