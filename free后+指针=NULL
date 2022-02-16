@@ -1,0 +1,20 @@
+//void Test(void)
+//{
+//	char *str = (char *)malloc(100);
+//	strcpy(str, "hello");
+//	free(str);//free释放str指向的空间后，并不会把str置为NULL
+//	str = NULL;
+//
+//	if (str != NULL)
+//	{
+//		strcpy(str, "world");
+//		printf(str);
+//	}
+//}
+//
+//int main()
+//{
+//	Test();
+//
+//	return 0;
+//}
